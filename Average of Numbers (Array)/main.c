@@ -4,10 +4,21 @@
 
 void printLine(int width); 
 
-int main(void){
-  int number[10], average = 0, array_length;
+int averageOfNumbers(int array[], int array_length){
+  int average = 0;
 
-  array_length = sizeof(number)/sizeof(number[0]);
+  for(int i = 0; i < array_length; i++)
+    average += array[i];
+  average /= array_length;
+
+  return average;
+  
+
+}
+int main(void){
+  int numbers[10], average = 0, array_length;
+
+  array_length = sizeof(numbers)/sizeof(numbers[0]);
 
   //User input
 
@@ -18,14 +29,11 @@ int main(void){
 
   for(int i = 0; i < array_length; i++){
    printf("Number[%d] : ", i);
-   scanf("%d", &number[i]);
+   scanf("%d", &numbers[i]);
   }
 
-  //Calculation of average
-  for(int i = 0; i < array_length; i++)
-      average += number[i];
-
-  average /= array_length;
+  //Calculation of average 
+  average = averageOfNumbers(numbers, array_length);
 
   //Output
   printLine(WIDTH);

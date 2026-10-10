@@ -2,21 +2,20 @@
 
 #define WIDTH 30
 
-void printLine(int width); 
+void printLine(int width);
 
-int averageOfNumbers(int array[], int array_length){
-  int average = 0;
+double averageOfNumbers(int array[], int array_length){
+  double average = 0;
 
   for(int i = 0; i < array_length; i++)
     average += array[i];
   average /= array_length;
 
   return average;
-  
 
 }
 int main(void){
-  int numbers[10], average = 0, array_length;
+  int numbers[10], array_length;
 
   array_length = sizeof(numbers)/sizeof(numbers[0]);
 
@@ -32,12 +31,10 @@ int main(void){
    scanf("%d", &numbers[i]);
   }
 
-  //Calculation of average 
-  average = averageOfNumbers(numbers, array_length);
 
   //Output
   printLine(WIDTH);
-  printf("Avarage of Number : %d \n", average);
+  printf("Avarage of Number : %.2lf \n", averageOfNumbers(numbers, array_length));
   printLine(WIDTH);
 
   return 0;

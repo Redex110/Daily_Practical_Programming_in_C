@@ -63,7 +63,12 @@ Daily_Practical_Programming_in_C/
 ├── Basic Calculator/
 │   └── main.c
 ├── Basic of File Managament/
-│   └── main.c
+│   ├── File Content Reader/
+│   │   └── main.c
+│   ├── File Content Rewriter
+│   │   └── main.c
+│   └── File Creation
+│       └── main.c
 ├── Compound Interest Calculator/
 │   └── main.c
 ├── Days in Months/

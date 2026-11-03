@@ -1,12 +1,10 @@
 # Daily Practical Programming in C
 
 ![Language](https://img.shields.io/badge/language-C-blue)
-![Programs](https://img.shields.io/badge/programs-15-brightgreen)
+![Programs](https://img.shields.io/badge/programs-17-brightgreen)
 ![Level](https://img.shields.io/badge/level-beginner-orange)
 
-A daily-practice repository of small, self-contained C programs, built to
-strengthen programming fundamentals through hands-on problem solving.
-Each program lives in its own folder as a single `main.c`.
+Daily C programming practice: small, self-contained programs to build strong fundamentals. A growing, beginner-friendly collection covering core concepts, logic building, and problem-solving, with each program in its own folder.
 
 ## Table of Contents
 
@@ -16,46 +14,55 @@ Each program lives in its own folder as a single `main.c`.
 - [Repository Structure](#repository-structure)
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
-- [Build & Run](#build--run) 
+- [Build & Run](#build--run)
 
 ## Why This Repo
 
-- Build a daily coding habit with one small program at a time.
-- Practice logic building and problem solving, not just syntax.
-- Keep every program simple enough to read in a minute and run in a second.
-- Serve as a reference for beginners learning C.
+- Build a daily coding habit with short, focused C exercises.
+- Practice core logic and problem-solving instead of memorizing syntax.
+- Keep every program small, readable, and easy to run independently.
+- Use the repository as a beginner-friendly reference for learning C fundamentals.
+- Grow from simple concepts to more practical coding tasks over time.
 
 ## Concepts Covered
 
-- Input/output with `printf` / `scanf`
-- Conditionals and `switch`
-- Loops and digit manipulation
-- Functions and recursion
-- Arrays and strings
-- Math library (`pow`) and formatted output
+- Variables, data types, and arithmetic operations
+- Input/output with `printf` and `scanf`
+- Conditionals and decision-making logic
+- Loops and iterative problem solving
+- Arrays and basic string handling
+- Functions, recursion, and modular code
+- Math-based challenges and numerical logic
+- File handling basics
+- Real-world beginner problems like interest, dates, and validation
 
 ## Programs
 
-| Category      | Programs                                                      |
-| ------------- | ------------------------------------------------------------- |
-| Basics        | Hello World, ASCII Characters, Basic Calculator               |
-| Number checks | Even/Odd, Prime, Armstrong, Palindrome, Leap Year             |
-| Math          | Factorial (loop & recursion), Sum of Digits, Largest of Three |
-| Arrays        | Average of Numbers (Array)                                    |
-| Finance       | Simple Interest, Compound Interest                            |
-| Dates         | Days in Months                                                |
+| Category | Programs |
+| --- | --- |
+| Basics | Hello World, ANSCII Characters, Basic Calculator |
+| Number checks | Even or Odd Checker, Prime Number Checker, Armstrong Number Checker, Palindrome Number Checker, Leap Year Checker |
+| Math | Factorial of Number, Sum of Digits, Largest of Three Numbers |
+| Arrays | Array Odd-Even Position Swapper, Average of Numbers (Array) |
+| Finance | Simple Interest Calculator, Compound Interest Calculator |
+| Dates | Days in Months |
+| File handling | Basic of File Managament |
 
 ## Repository Structure
 
-```
+```text
 Daily_Practical_Programming_in_C/
 ├── ANSCII Characters/
 │   └── main.c
 ├── Armstrong Number Checker/
 │   └── main.c
+├── Array Odd-Even Position Swapper/
+│   └── main.c
 ├── Average of Numbers (Array)/
 │   └── main.c
 ├── Basic Calculator/
+│   └── main.c
+├── Basic of File Managament/
 │   └── main.c
 ├── Compound Interest Calculator/
 │   └── main.c
@@ -82,20 +89,19 @@ Daily_Practical_Programming_in_C/
 └── README.md
 ```
 
-Folder names are written in plain English so you can tell what a program does
-before opening it.
+Each folder contains a single small C program, making it easy to explore one concept at a time.
 
 ## Prerequisites
 
 You need a C compiler. GCC is used in the examples below.
 
-| OS      | How to get GCC                                                  |
-| ------- | --------------------------------------------------------------- |
-| Windows | Install [MinGW-w64](https://www.mingw-w64.org/) or use WSL      |
-| Linux   | `sudo apt install build-essential` (Debian/Ubuntu)              |
-| macOS   | `xcode-select --install` (provides Clang, which works the same) |
+| OS | How to get GCC |
+| --- | --- |
+| Windows | Install [MinGW-w64](https://www.mingw-w64.org/) or use WSL |
+| Linux | `sudo apt install build-essential` (Debian/Ubuntu) |
+| macOS | `xcode-select --install` (provides Clang, which works the same) |
 
-Check the install with:
+Check the installation with:
 
 ```bash
 gcc --version
@@ -112,7 +118,7 @@ cd Daily_Practical_Programming_in_C
 
 ## Build & Run
 
-Go into any program's folder, then compile and run it:
+Open any program folder, then compile and run it:
 
 ```bash
 cd "Prime Number Checker"
@@ -124,10 +130,9 @@ On Windows (Command Prompt or PowerShell), run `main.exe` instead of `./main`.
 Notes:
 
 - Folder names contain spaces, so wrap them in quotes when using `cd`.
-- `-lm` links the math library. It is needed for programs that use `pow`, and harmless for the rest.
-- To catch common mistakes while learning, compile with warnings turned on:
+- `-lm` links the math library. It is useful for programs that use `pow`, and harmless for the rest.
+- To catch common beginner mistakes while learning, compile with warnings enabled:
 
   ```bash
   gcc -Wall -Wextra main.c -o main -lm
   ```
-
